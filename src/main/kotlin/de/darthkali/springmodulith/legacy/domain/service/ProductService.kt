@@ -1,4 +1,4 @@
-package de.darthkali.springmodulith.product.domain.service
+package de.darthkali.springmodulith.legacy.domain.service
 
 import de.darthkali.springmodulith.legacy.domain.model.Product
 import de.darthkali.springmodulith.legacy.domain.ports.inbound.ForProducts

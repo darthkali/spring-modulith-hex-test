@@ -1,4 +1,4 @@
-package de.darthkali.springmodulith.shoppingcard.domain.service
+package de.darthkali.springmodulith.legacy.domain.service
 
 import de.darthkali.springmodulith.legacy.adapter.moduleapi.ForModuleProducts
 import de.darthkali.springmodulith.legacy.domain.model.ShoppingCardProduct
