@@ -1,23 +1,16 @@
-package de.darthkali.springmodulith.product.domain.service
+package de.darthkali.springmodulith.product.adapter
 
 import de.darthkali.springmodulith.product.adapter.dto.ProductDto
 import de.darthkali.springmodulith.product.adapter.dto.ProductDto.Companion.toDto
 import de.darthkali.springmodulith.product.domain.model.Product
 import de.darthkali.springmodulith.product.domain.ports.inbound.OpenPort
-import org.springframework.stereotype.Service
 
-
-@Service
-class ProductService(): OpenPort {
+class Adapter(private val openPort: OpenPort): OpenPort {
     override fun getProducts(): List<Product> {
-        return listOf(
-            Product("P1", "D1", 5),
-        )
+        return openPort.getProducts().map { product -> product }
     }
 
     override fun getProductsDto(): List<ProductDto> {
-        return listOf(
-            Product("P1", "D1", 5).toDto(),
-        )
+        return openPort.getProducts().map { product -> product.toDto() }
     }
 }

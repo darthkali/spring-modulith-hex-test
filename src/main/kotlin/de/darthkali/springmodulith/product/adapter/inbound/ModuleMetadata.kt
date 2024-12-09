@@ -1,9 +1,9 @@
-package de.darthkali.springmodulith.product.adapter.moduleapi
+package de.darthkali.springmodulith.product.adapter.inbound
 
 import org.springframework.modulith.NamedInterface
 import org.springframework.modulith.PackageInfo
 
 @PackageInfo
-@NamedInterface("moduleapi")
+@NamedInterface (name = ["closed"])
 class ModuleMetadata {}
 

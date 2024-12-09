@@ -1,4 +1,4 @@
-package de.darthkali.springmodulith.product.adapter.moduleapi
+package de.darthkali.springmodulith.product.adapter.dto
 
 import de.darthkali.springmodulith.legacy.adapter.moduleapi.ProductDto
 import de.darthkali.springmodulith.legacy.domain.model.Product
